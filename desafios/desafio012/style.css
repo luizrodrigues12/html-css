@@ -44,7 +44,7 @@ header a:hover, footer a:hover {
 }
 
 header p {
-    font-size: 16px;
+    font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 50px;
 }

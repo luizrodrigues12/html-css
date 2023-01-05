@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select, Datalist e TextArea</title>
+    <style>
+        fieldset {
+            width: 250px;
+        }
+
+        div {
+            margin: 20px 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select, Datalist e TextArea</h1>
+    <form action="cadastro.py" method="post">
+        <fieldset>
+            <div>
+                <label for="iestados">Estado: </label>
+                <select name="estados" id="iestados">
+                    <option value="AM">Amapá</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="BA">Bahia</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+            <div>
+                <label for="iprofissao">Profissão: </label>
+                <input type="text" name="profissao" id="iprofissao" list="listprofissao">
+                <datalist id="listprofissao">
+                    <option>Cabeleireiro</option>
+                    <option>Motorista</option>
+                    <option>Astro-físico</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="itexto">Mensagem:</label><br>
+                <textarea name="texto" id="itexto" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
